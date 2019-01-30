@@ -1,4 +1,4 @@
-# Project readme
+# Go plugins showcase
 
 Aim of this project it to show native Go plugin usage patterns, which you can apply to dynamically extend and even patch your Go apps. 
 
