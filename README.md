@@ -311,7 +311,7 @@ Interesting part here is that unlike examples before, it supports plugins which 
 ### Limitations
 At the moment build pipeline described above, has a few pitfalls you must know about.
 
-At the moment pipeline for both plugins and main binaries share the the same Docker image. Which means that your main binary exposes its source code. While for open source apps it may work, it will be a blocker for closed source. One of the solutions here, will be separating those pipelines. And the only difference of plugin build pipeline Docker image will be that it will contain only vendor folder of your app (excluding private vendored repos). An alternative to that, will be creating a simple HTTP service, where user can upload plugin source code, and as output receive `so` file.
+Right now both plugins and main binaries share the the same Docker image: which means that your main binary exposes its source code. While for open source apps it may work, it will be a blocker for closed sourced ones. One of the solutions here, will be separating those pipelines. And the only difference of plugin build pipeline Docker image will be that it will contain only vendor folder of your app (excluding private vendored repos). An alternative to that, will be creating a simple HTTP service, where user can upload plugin source code, and as output receive `so` file.
 
 Another limitation, is that if you try to build binary for `Darvin` (OSX) platform, you will get an error, because Go plugins require to have CGO cross-compilation toolkit, for each platform you want to support. Thankfully there are projects like [https://github.com/karalabe/xgo](https://github.com/karalabe/xgo) which provide pre-build Docker images for exactly this case. 
 
