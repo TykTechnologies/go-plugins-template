@@ -316,7 +316,3 @@ At the moment pipeline for both plugins and main binaries share the the same Doc
 Another limitation, is that if you try to build binary for `Darvin` (OSX) platform, you will get an error, because Go plugins require to have CGO cross-compilation toolkit, for each platform you want to support. Thankfully there are projects like [https://github.com/karalabe/xgo](https://github.com/karalabe/xgo) which provide pre-build Docker images for exactly this case. 
 
 In future this repository may fix pitfalls described above.
-
-
-
-
