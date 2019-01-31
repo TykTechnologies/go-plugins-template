@@ -348,3 +348,4 @@ We would LOVE to see your tips and tricks on using Go plugins. Create and issues
 * Plugin package -[https://golang.org/pkg/plugin/](https://golang.org/pkg/plugin/)
 * Writing Modular Go Programs with Plugins - [https://medium.com/learning-the-go-programming-language/writing-modular-go-programs-with-plugins-ec46381ee1a9](https://medium.com/learning-the-go-programming-language/writing-modular-go-programs-with-plugins-ec46381ee1a9)
 * Writing middleware in #golang and how Go makes it so much fun - [https://medium.com/@matryer/writing-middleware-in-golang-and-how-go-makes-it-so-much-fun-4375c1246e81](https://medium.com/@matryer/writing-middleware-in-golang-and-how-go-makes-it-so-much-fun-4375c1246e81)
+* Things to avoid while using Golang plugins - https://medium.com/@alperkose/things-to-avoid-while-using-golang-plugins-f34c0a636e8
