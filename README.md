@@ -1,5 +1,11 @@
 # Introduction to native plugins
 
+The main idea behind the native plugin is that it is a compiled binary file of `so` format, which can be loaded in runtime to the existing process and can alter or extend its behavior. 
+
+From a performance point of view, the code inside plugin runs at the same speed as its parent binary. It happens because Go plugins communicate with main binary almost without any overhead, like if plugin code was built-in. Additionally, plugins share exactly same data types, so you do not have to build a "bridge" like if you used gRPC or passed objects between scripting engine and Go runtime. 
+
+Natvie Go plugins are known for extreme performance and flexibility, but quite big complexity of maintaining them.
+
 The aim of this project is to show native Go plugin usage patterns, which you can apply to dynamically extend and even patch your Go apps. 
 
 The project itself is a simple reverse proxy, with HTTP basic auth support. You can define PRE auth and POST auth hooks to run custom logic, and dynamically replace, e.g. patch, parts of the application (reverse proxy logic, which by default intentionally contains a bug).
